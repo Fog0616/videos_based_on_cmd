@@ -2,7 +2,7 @@ import cv2
 import argparse
 from PIL import Image
 
-def video2text(input_path, output_path, scale=0.1, max_frames=None, frame_interval=2):
+def video2text(input_path, output_path, scale=0.1, max_frames=None, frame_interval=1):
     """
     将视频转换为文本格式（显示压缩后尺寸）
     
@@ -54,8 +54,8 @@ def video2text(input_path, output_path, scale=0.1, max_frames=None, frame_interv
 if __name__ == "__main__":
     # 示例参数（可修改）
     video2text(
-        input_path= "C:\\Users\\a1661\\Desktop\\cmd\\test.mp4" , 
-        output_path= "C:\\Users\\a1661\\Desktop\\cmd\\output.txt",
+        input_path= r"C:\Users\1\Desktop\videos_based_on_cmd\test.mp4" , 
+        output_path= r"C:\Users\1\Desktop\videos_based_on_cmd\样例输入输出output.txt",
         scale=0.25,      # 压缩为原尺寸的20%
         max_frames=1393,  # 最多处理50帧
         frame_interval=3 # 每10帧取1帧
